@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Smartphone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <img src="/img/logo.png" alt="Logo Dmae" class="logo" />
+        <h1>Controle de Smartphones e Tablets</h1>
+      </header>
+      <div>
+        <form action="input">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <div class="inputBox">
+                        <label for="nome" class="label-text">Remetente</label>
+                        <input type="text" name="remetente" class="inputUser" placeholder="Quem trouxe">
+                    </div>
+                    <div class="inputBox">
+                        <label for="setor" class="label-text">Setor : </label>
+                        <input type="text" name="setor" class="inputUser" required>
+    
+                        <label for="Qnt" class="label-text">Qnt : </label>
+                        <input type="num" name="qnt" class="inputUser">
+                    </div>      
+                    <div class="inputBox">
+                        <label for="cep"class="label-text">CEP : </label>
+                        <input type="cep" name="cep" id="cep" class="inputUser">
+    
+                        <label for="cidade" class="label-text">Cidade : </label>
+                        <input type="text" name="cidade" id="cidade" class="inputUser" >
+                        </div> 
+                    <div class="inputBox">
+                        <label for="rua" class="label-text">Rua : </label>
+                        <input type="text" name="rua" id="rua" class="inputUser">
+                    </div>
+                    <div class="inputBox">
+                        <label for="num" class="label-text">N° : </label>
+                        <input type="tel" name="num" id="num" class="inputUser">
+    
+                        <label for="bairro" class="label-text">Bairro : </label>
+                        <input type="text" name="bairro" id="bairro" class="inputUser" placeholder="Shopping Park">
+                    </div><!--
+                    <div class="check">
+                        <input type="checkbox" id="wpp" name="wpp" value="wpp" required="">
+                        <label for="wpp">Deseja receber sua OS no whatsapp</label> 
+                    </div>-->
+                </div>
+                </div> 
+                <section class="btn">
+                    <a href="index.html" target="_self">
+                        <button class="advance-btn">
+                            <img src="img/left.svg" class="img-btn">
+                        </button> 
+                    </a>
+                    <a href="infveiculo.html" target="_self">
+                        <button class="back-btn" type="submit">
+                            <img src="img/right.svg" class="img-btn">
+                        </button> 
+                    </a>
+                </section>
+            </form>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
