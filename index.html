@@ -27,20 +27,27 @@
         <form action="input" method="post" class="form">
           <div class="input-group">
             <div class="inputBox">
-              <label for="nome" class="label-text">Remetente :</label>
-              <input type="text" name="remetente" class="inputUser" placeholder="Quem trouxe">
+              <div class="label">
+                <label for="nome" class="label-text">Remetente :</label>
+                <input type="text" name="remetente" class="inputUser" placeholder="Quem trouxe">
+              </div>
+             
+              <div class="label">
+                <label for="setor" class="label-text">Setor : </label>
+                <input type="text" name="setor" class="inputUser" required>
+              </div>
             </div>
             <div class="inputBox">
-              <label for="setor" class="label-text">Setor : </label>
-              <input type="text" name="setor" class="inputUser" required>
-    
-              <label for="Qnt" class="label-text">Qnt : </label>
-              <input type="num" name="qnt" class="inputUser">
+              <div class="label">
+                <label for="Qnt" class="label-text">Qnt : </label>
+                <input type="num" name="qnt" class="inputUser">                
+              </div>
+              <div class="label">
+                <label for="cep"class="label-text">Aparelho : </label>
+                <input type="cep" name="cep" id="cep" class="inputUser">                
+              </div>
             </div>      
             <div class="inputBox">
-              <label for="cep"class="label-text">Aparelho : </label>
-              <input type="cep" name="cep" id="cep" class="inputUser">
-    
               <label for="cidade" class="label-text">Entregue para :  </label>
               <input type="text" name="cidade" id="cidade" class="inputUser" >
             </div> 
