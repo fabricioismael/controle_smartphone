@@ -6,7 +6,7 @@
 }
 .inputBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-left: 1rem;
   gap: 1rem;
   align-items: center;
@@ -18,14 +18,33 @@
   box-shadow: 0.2px 0.2px 0px #000000;
   font-size: 0.8rem;
 }
-
+.contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.containLest {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.containLest label {
+  padding-right: 1rem;
+}
+.inputUserRamal {
+  width: 10%;
+}
+.inputUserQnt {
+  width: 10%;
+}
 label.label-text {
   font-weight: 700;
   font-size: 1.3rem;
 }
-.imputUser {
-  width: 100%;
-}
+
 .inputUser {
   width: 30%;
 }
