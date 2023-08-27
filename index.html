@@ -13,16 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/form.css">
   </head>
 
   <body>
     <main class="main">
       <header class="header">
-        <img src="/img/logo.png" alt="Logo Dmae" class="logo" />
-        <h1>Controle de Smartphones e Tablets</h1>
+        <img src="./img/logo.png" alt="Logo Dmae" class="logo" />
+        <h1 class="titulo">Controle de Smartphones e Tablets</h1>
       </header>
       <div>
         <form action="input" method="post" class="form">
@@ -34,38 +34,39 @@
                 <label for="nome" class="label-text">Remetente :</label>
                 <input type="text" name="remetente" class="inputUser" placeholder="Quem trouxe">
 
+                <label for=" setor" class="label-text">Setor : </label>
+                <input type="text" name="setor" class="inputUser">
+                
                 <label for="nome" class="label-text">Ramal :</label>
                 <input type="text" name="ramal" class="inputUserRamal">
 
-                <label for=" setor" class="label-text">Setor : </label>
-                <input type="text" name="setor" class="inputUser">
 
               </div>
               <div class="containQnt">
 
-                <label for="Qnt" class="label-text">Qnt : </label>
+                <label for="cep" class="label-text aparelho">Aparelho : </label>
+                <input type="cep" name="cep" id="cep" class="inputUser">
+
+                <label for="Qnt" class="label-text qnt">Qnt : </label>
                 <input type="num" name="qnt" class="inputUserQnt">
 
-
-                <label for="cep" class="label-text">Aparelho : </label>
-                <input type="cep" name="cep" id="cep" class="inputUser">
 
                 <button type="submit" class="load">
                   Load
                 </button>
-
               </div>
+
               <div class="containPat">
 
-                <label for="cep" class="label-text">Patrimônio : </label>
+                <label for="cep" class="label-text patrimonio">Patrimônio : </label>
                 <input type="cep" name="cep" id="cep" class="inputUser">
 
-              </div>
-
-              <div class="containLest">
-                <label for="cidade" class="label-text">Entregue para : </label>
+                <label for="cidade" class="label-text entregue">Entregue para : </label>
                 <input type="text" name="cidade" id="cidade" class="inputUser">
               </div>
+
+              
+              
 
               <button type="submit" class="btn">
                 Enviar
